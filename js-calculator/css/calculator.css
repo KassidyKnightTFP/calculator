@@ -1,0 +1,57 @@
+body {
+  /* What high level styles should we apply to the entire body? */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* What should my selector be to get the results box? */
+#result {
+  /* How can I align the text to the right? */
+  text-align: right;
+  /* How can I set a background color? */
+  background-color: turquoise;
+  /* How can I give my box a special border */
+  border: 2px solid black;
+  /* How can I make the text bigger? */
+  font-size: 36px;
+  /* Lets give the numbers some room inside the result box */
+  padding: 5px;
+}
+
+/* What should I use to apply a style to all buttons? */
+button {
+  /* Can we make the buttons have curves? */
+  border-radius: 8px;
+  /* Lets make the text bigger */
+  font-size: 24px;
+  /* Lets provide a border to all of the buttons */
+  border: 2px solid black;
+  /* Lets give the numbers and operators some space */
+  padding: 16px;
+}
+
+/* What should my selector be to get all number buttons? */
+button.number {
+  background-color: blueviolet;
+}
+
+/* What should my selector be to get all the number buttons being hovered over? */
+button.number:hover {
+  background-color: white;
+}
+
+/* What should my selector be to get all the operator buttons? */
+button.operator {
+  background-color: blue;
+}
+
+/* What should my selector be to get all the operator buttons being hovered over? */
+button.operator:hover {
+  background-color: white;
+}
+
+/* Lets change all of the number button colors only if the screen is small */
+@media(max-width: 800px) {
+  button.number {
+    background-color: red;
+  }
+}
